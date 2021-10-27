@@ -1,0 +1,23 @@
+<html>
+    <script>
+        window.onload=function(){
+       const tag = document.getElementById('tag1');
+       var time = 100;
+       const getTime =()=>{
+           time = time - 1;
+           
+        tag.innerHTML='This Page Will Dissapear Soon!' + time + 'seconds';
+        }
+  
+         setInterval(getTime,500);
+  
+    }
+
+    </script>
+    <body>
+        <div>
+            <h1 id="tag1">Hello! EarthPeople</h1>
+        </div>
+    </body>
+    
+</html>
